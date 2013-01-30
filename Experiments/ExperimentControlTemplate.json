@@ -1,0 +1,27 @@
+{
+// record snapshot version (client script/sql, server script/sql)
+"version": 1.0,
+// Server info (Experiment control server, VM)
+// DBMS database & user info
+"exp_control_server": {
+	"host": "localhost",
+	 "port": 1210
+},
+"vm_server":{
+	"host": "localhost",
+	 "port": 1210
+},
+
+// Experiments prerequisites
+// 1 - Experiment control server is running
+// 2 - VM is running
+// 2 - DBMS is running
+"valueOfSerializability": {
+	"id":10,
+	"nbThreads": ["1,2,5,10,20,30,40,50"],
+	"nbRuns": 3
+}
+
+
+
+}
