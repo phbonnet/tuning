@@ -58,11 +58,11 @@ cold
 ### LogIO ###
 
 Here is makefile target on the client (assuming the input files are in the logio directory and the output is stored in a data directory), which runs the logio experiment on the TuningVM using dbt
-
+'''
 logio: 
     tar cjvf logio.tar.gz logio
-    scp logio.tar.gz tuning@host:/home/tuning/Upload
-    ssh tuning@host << EOF
+    scp logio.tar.gz $USER@$HOST:/home/tuning/Upload
+    ssh $USER@$HOST << EOF
         export LOGIODIR = 'dbt id db2 logio'
         touch expid.txt
         mkdir LOGIODIR; cd LOGIODIR; mdir in; mkdir out
@@ -84,11 +84,11 @@ logio:
         dbt db2 stop
         cd ..; tar cvjf logio_out.tar.gz $LOGIODIR; mv logio_out.tar.gz ~/Download
     EOF
-    scp tuning@host:/home/tuning/Download/logio.out.tar.gz .
+    scp $USER@$HOST:/home/tuning/Download/logio.out.tar.gz .
     tar xjvf logio_out.tar.gz -C tmp/
     mkdir $(cat tmp/expid.txt)
     mv tmp data/$(cat tmp/expid.txt)/
-
+'''
 ### Indexing ###
 
 
