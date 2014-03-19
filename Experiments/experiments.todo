@@ -1,0 +1,14 @@
+tuning.todo:
+  ☐ write overview in README.md @writing
+  ☐ write experiment structure description @writing
+  ☐ write commands mockup (make+zsh+gnuplot) @code
+  ☐ prepare Tuning VM (Ubuntu) @code
+  ☐ prepare host configuration @code @writing
+  ☐ prepare command script for existing experiments @code
+  ☐ re-write gentable @code @writing
+  ☐ write new experiments for DB2 and MySQL @writing @code
+  
+  re-write gentable:
+    ☐ write blog post on data generation @writing
+    ☐ re-write gentable in c @code
+ 
