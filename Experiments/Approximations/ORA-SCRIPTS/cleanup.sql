@@ -1,0 +1,16 @@
+drop table region;
+drop table nation;
+drop table customer;
+drop table orders;
+drop table supplier;
+drop table part;
+drop table partsupp;
+drop table lineitem;
+drop table approxregion;
+drop table approxnation;
+drop table approxcustomer;
+drop table approxorders;
+drop table approxsupplier;
+drop table approxpart;
+drop table approxpartsupp;
+drop table approxlineitem;

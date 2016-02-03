@@ -1,0 +1,1 @@
+update counter set nextkey = ?;

@@ -1,0 +1,1 @@
+sqlldr direct=true userid=exper/thebest1 control=load.sql data='C:\Tuning\Experiments\accounts.data'

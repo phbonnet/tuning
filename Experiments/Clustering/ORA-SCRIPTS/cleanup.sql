@@ -1,0 +1,1 @@
+drop cluster c_hundreds including tables;

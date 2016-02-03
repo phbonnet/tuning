@@ -1,0 +1,1 @@
+select dept from techlocation where ssnum = ?

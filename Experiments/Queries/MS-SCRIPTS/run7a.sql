@@ -1,0 +1,1 @@
+select dept from employee where ssnum = ?

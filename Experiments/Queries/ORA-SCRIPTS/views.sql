@@ -1,0 +1,1 @@
+create view techlocation as select ssnum, techdept.dept, location from employee, techdept where employee.dept = techdept.dept

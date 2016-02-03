@@ -1,0 +1,1 @@
+select ssnum from employee, techdept where employee.dept = techdept.dept;

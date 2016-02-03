@@ -1,0 +1,1 @@
+select ssnum from employee where dept in (select dept from techdept);
